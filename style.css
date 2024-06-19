@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+/*++++++++++++++++++++++++++++++ for all tag style ++++++++++++++++++++++++++++++*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+}
+/* Variables */
+:root {
+    --primary-color: #0cacfc;
+    --secondary-color:rgb(44, 44, 44);
+    --third-color: #292828cb;
+    --font-size: 2vw;
+}
+
+/*++++++++++++++++++++++++++++++ web page style ++++++++++++++++++++++++++++++*/
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+/*++++++++++++++++++++++++++++++ Header ++++++++++++++++++++++++++++++*/
+header {
+    width: 100%;
+    height: 5.13vw;
+    padding: 0.8vw 5vw;
+    box-shadow: 0 0 5px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font-size);
+}
+/*++++++++++++++++++++++++++++++ Header left part ++++++++++++++++++++++++++++++*/
+header .left h1 {
+    font-size: 1.2em;
+}
+/*++++++++++++++++++++++++++++++ Header Navber ++++++++++++++++++++++++++++++*/
+nav{
+    display: flex;
+}
+/*++++++++++++++++++++++++++++++ Navbar Button ++++++++++++++++++++++++++++++*/
+nav button{
+    display: none;
+}
+/*++++++++++++++++++++++++++++++ Navbar Hamburger Menu ++++++++++++++++++++++++++++++*/
+nav .hamburger-menu {
+    display: flex;
+    gap: 2vw;
+}
+
+nav .hamburger-menu a {
+    color: var(--secondary-color);
+    font-size: 0.6em;
+    font-weight: 500;
+}
+/*++++++++++++++++++++++++++++++ Header Right Part ++++++++++++++++++++++++++++++*/
+header .right{
+    width: 10%;
+    height: 90%;
+    font-size: 0.7em;
+    font-weight: 600;
+    padding: 0.7vw;
+    border-radius: 8px;
+    color: white;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*++++++++++++++++++++++++++++++ Main ++++++++++++++++++++++++++++++*/
+
+/*++++++++++++++++++++++++++++++ First Section (Home Page) ++++++++++++++++++++++++++++++*/
+.container {
+    width: 100vw;
+    height: 39vw;
+    font-size: var(--font-size);
+}
+/*++++++++++++++++++++++++++++++ Home page Upper Part ++++++++++++++++++++++++++++++*/
+.container .upper{
+    width: 100%;
+    height: 80%;
+    padding: 2vw 5vw;
+    display: flex;
+}
+/*++++++++++++++++++++++++++++++ Home page Upper Left Part ++++++++++++++++++++++++++++++*/
+.container .left {
+    width: 60%;
+    height: 100%;
+    padding:0 2.5vw;
+}
+.container .left h2 {
+    width: 80%;
+    font-size: 2em;
+    line-height: 1.3;
+    color: var(--secondary-color);
+}
+#color {
+    color:var(--primary-color);
+}
+.container .left p {
+    width: 80%;
+    font-size: 0.65em;
+    color: var(--third-color);
+    margin-bottom: 15px;
+}
+.container .left button {
+    font-size: 0.7em;
+    font-weight: 500;
+    padding: 1.3vw;
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+/*++++++++++++++++++++++++++++++ Home page Upper Right Part ++++++++++++++++++++++++++++++*/
+.container .right {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.container .right img{
+    width: 75%;
+    height: 100%;
+}
+
+/*++++++++++++++++++++++++++++++ Home page Bottom Part ++++++++++++++++++++++++++++++*/
+.container .bottom{
+    width: 100%;
+    height: 20%;
+    color: white;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 5vw;
+}
+
+.bottom .bottom-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#c-3{
+    display: inline;
+}
+.bottom-right .text-2{
+    font-size: 0.65em;
+}
