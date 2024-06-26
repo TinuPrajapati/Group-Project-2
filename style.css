@@ -7,7 +7,6 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: "Lora", serif;
-    font-optical-sizing: auto;
 }
 /* Variables */
 :root {
@@ -21,15 +20,13 @@
 /*++++++++++++++++++++++++++++++ web page style ++++++++++++++++++++++++++++++*/
 html,
 body {
-    width: 100vw;
+    width: 95vw;
     height: 100vh;
-    overflow-x: hidden;
-    scrollbar-width: 5px;
 }
 
 /*++++++++++++++++++++++++++++++ Header ++++++++++++++++++++++++++++++*/
 header {
-    width: 100vw;
+    width: 100%;
     height: 11.55vh;
     padding: 0.8vw 5vw;
     box-shadow: 0 0 5px black;
@@ -80,7 +77,7 @@ header .right{
 
 /*++++++++++++++++++++++++++++++ First Section (Home Page) ++++++++++++++++++++++++++++++*/
 .container {
-    width: 100vw;
+    width: 100%;
     height: 39vw;
     font-size: var(--font-size);
 }
@@ -525,7 +522,7 @@ header .right{
 }
 /*++++++++++++++++++++++++++++++ Footer ++++++++++++++++++++++++++++++*/
 footer{
-    width: 100vw;
+    width: 100%;
     height: 35vh;
     padding: 1.2vw 7vw;
     display: flex;
