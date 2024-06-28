@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/favicon-icon/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "jKZPNLW_nG_cmRW7E",
+            });
+        })();
+    </script>
 </head>
 
 <body>
@@ -89,67 +98,79 @@
                     <div class="row">
                         <div class="row-left">
                             <img src="assets/icon/dry-cleaning.png" alt="">
-                            <p>Dry Cleaning <div class="circle"></div></p>
+                            <p>Dry Cleaning </p>
+                            <div class="circle"></div>
                             <p>₹200.00</p>
                         </div>
                         <div class="row-right">
-                            <button>Add Item <i class="ri-add-circle-line"></i></button>
-                            <button>Remove Item <i class="ri-indeterminate-circle-line"></i></button>
+                            <button class="add-item">Add Item <i class="ri-add-circle-line"></i></button>
+                            <button class="remove-item remove">Remove Item <i
+                                    class="ri-indeterminate-circle-line"></i></button>
                         </div>
                     </div>
                     <div class="row">
                         <div class="row-left">
                             <img src="assets/icon/wash-and-fold.png" alt="">
-                            <p>Wash and Fold <div class="circle"></div></p>
+                            <p>Wash and Fold </p>
+                            <div class="circle"></div>
                             <p>₹100.00</p>
                         </div>
                         <div class="row-right">
-                            <button>Add Item <i class="ri-add-circle-line"></i></button>
-                            <button>Remove Item <i class="ri-indeterminate-circle-line"></i></button>
+                            <button class="add-item">Add Item <i class="ri-add-circle-line"></i></button>
+                            <button class="remove-item remove">Remove Item <i
+                                    class="ri-indeterminate-circle-line"></i></button>
                         </div>
                     </div>
                     <div class="row">
                         <div class="row-left">
                             <img src="assets/icon/ironing.png" alt="">
-                            <p>Ironing <div class="circle"></div></p>
+                            <p>Ironing </p>
+                            <div class="circle"></div>
                             <p>₹30.00</p>
                         </div>
                         <div class="row-right">
-                            <button>Add Item <i class="ri-add-circle-line"></i></button>
-                            <button>Remove Item <i class="ri-indeterminate-circle-line"></i></button>
+                            <button class="add-item">Add Item <i class="ri-add-circle-line"></i></button>
+                            <button class="remove-item remove">Remove Item <i
+                                    class="ri-indeterminate-circle-line"></i></button>
                         </div>
                     </div>
                     <div class="row">
                         <div class="row-left">
                             <img src="assets/icon/stain-removal.png" alt="">
-                            <p>Stain Removal <div class="circle"></div></p>
+                            <p>Stain Removal </p>
+                            <div class="circle"></div>
                             <p>₹500.00</p>
                         </div>
                         <div class="row-right">
-                            <button>Add Item <i class="ri-add-circle-line"></i></button>
-                            <button>Remove Item <i class="ri-indeterminate-circle-line"></i></button>
+                            <button class="add-item">Add Item <i class="ri-add-circle-line"></i></button>
+                            <button class="remove-item remove">Remove Item <i
+                                    class="ri-indeterminate-circle-line"></i></button>
                         </div>
                     </div>
                     <div class="row">
                         <div class="row-left">
                             <img src="assets/icon/leather-cleaning.png" alt="">
-                            <p>Leather and Suede Cleaning <div class="circle"></div></p>
+                            <p>Leather and Suede Cleaning </p>
+                            <div class="circle"></div>
                             <p>₹999.00</p>
                         </div>
                         <div class="row-right">
-                            <button>Add Item <i class="ri-add-circle-line"></i></button>
-                            <button>Remove Item <i class="ri-indeterminate-circle-line"></i></button>
+                            <button class="add-item">Add Item <i class="ri-add-circle-line"></i></button>
+                            <button class="remove-item remove">Remove Item <i
+                                    class="ri-indeterminate-circle-line"></i></button>
                         </div>
                     </div>
                     <div class="row">
                         <div class="row-left">
                             <img src="assets/icon/wedding-cleaning.png" alt="">
-                            <p>Wedding Dress Cleaning <div class="circle"></div></p>
+                            <p>Wedding Dress Cleaning </p>
+                            <div class="circle"></div>
                             <p>₹2800.00</p>
                         </div>
                         <div class="row-right">
-                            <button>Add Item <i class="ri-add-circle-line"></i></button>
-                            <button>Remove Item <i class="ri-indeterminate-circle-line"></i></button>
+                            <button class="add-item">Add Item <i class="ri-add-circle-line"></i></button>
+                            <button class="remove-item remove">Remove Item <i
+                                    class="ri-indeterminate-circle-line"></i></button>
                         </div>
                     </div>
                 </div>
@@ -183,23 +204,24 @@
                 <!-- ++++++++++++++++++++++++++++++ right bottom box ++++++++++++++++++++++++++++++ -->
                 <div class="bottom-box">
                     <h3>Book Now</h3>
-                    <form action="#">
+                    <form action="" method="POST">
                         <label for="name">Name</label>
-                        <input type="text" id="name" placeholder="Enter your full name">
+                        <input type="text" id="name" placeholder="Enter your full name" name="Username">
                         <div class="row">
                             <div>
                                 <label for="email">Email</label>
-                                <input type="email" id="email" placeholder="abc@gmail.com">
+                                <input type="email" id="email" placeholder="abc@gmail.com" name="Email">
                             </div>
                             <div>
                                 <label for="number">Phone Number</label>
-                                <input type="text" id="number" placeholder="xxxxx-xxxxx" maxlength="10">
+                                <input type="text" id="number" placeholder="xxxxx-xxxxx" maxlength="10"
+                                    name="Phone_Number">
                             </div>
                         </div>
                         <button type="submit" id="submit-btn">Book Now</button>
                     </form>
                     <div class="bottom-line">
-                        <p><i class="ri-information-line"></i>Add the items to the cart and book</p>
+
                     </div>
                 </div>
             </div>
@@ -208,7 +230,8 @@
             <div class="about">
                 <img src="assets/icon/washing-machine.png" alt="">
                 <h5>Premium Services</h5>
-                <p>Elevate your wardrode with our meticulous dry cleaning, ensuring garments look and feel as good as new.</p>
+                <p>Elevate your wardrode with our meticulous dry cleaning, ensuring garments look and feel as good as
+                    new.</p>
             </div>
             <div class="about">
                 <img src="assets/icon/help-desk.png" alt="">
@@ -218,12 +241,14 @@
             <div class="about">
                 <img src="assets/icon/delivery-box.png" alt="">
                 <h5>Hassle Free Delivery</h5>
-                <p>Enjoy seamless services with our convenient pickup and delivery options, tailored to your schedule.</p>
+                <p>Enjoy seamless services with our convenient pickup and delivery options, tailored to your schedule.
+                </p>
             </div>
             <div class="about">
                 <img src="assets/icon/profit.png" alt="">
                 <h5>Affordable Prices</h5>
-                <p>Experience exceptional care without breaking the bank - our affordable prices make laundry day stree-free.</p>
+                <p>Experience exceptional care without breaking the bank - our affordable prices make laundry day
+                    stree-free.</p>
             </div>
         </section>
         <section class="services-subscribe">
@@ -273,7 +298,7 @@
             </div>
         </div>
     </footer>
-    
+
     <script src="script.js"></script>
 </body>
 
